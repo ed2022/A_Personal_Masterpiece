@@ -33,10 +33,10 @@ body {
 }/*Spaces out and controls the nagvigation pannel*/
 
 .backImg1{
-    height: 500px;
+    height: 600px;
     width: 100%;
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 120px;
     background-image: url("https://wallpapercave.com/wp/wp4288404.jpg");
     background-size: cover;
     background-position: center;
@@ -47,29 +47,74 @@ body {
     flex-wrap: wrap;
     margin-left: 20px;
 } 
-.imgLeft{ 
+
+.about-me, .portfolio, .contact{
+    font-family: var(--text);
+    font-size: 20px;
+    width: auto;
+    height: 700px;
+    margin: 20px;
+}
+
+.portfolio, .contact {
+   margin: 40px; 
+}
+
+.about-me text, .portfolio text, .contact text {
+    font-family: var(--text);
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.girlImg { 
+     display: flex; 
      float:right;
-     max-width: 120%;
+     margin-top: 20px;
+     max-width: 100%;
      flex-basis: 40%;
      border: 20px dashed var(--cream);
      padding: 20px;
      position: relative;
-}
-.about-me {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    font-family: var(--text);
-    font-size: 20px;
-    flex-direction: wrap;
-}
+     left: 300px;
+}/*Adjusting the Image since it flows to the East*/
 
 .resume{
     height: 100px;
     width: 100px;
 }/*This will take you to my resume PDF!*/
+
+.workImg { 
+    position: relative;
+    flex-wrap: wrap; 
+    float:left;
+    margin-top: 20px;
+    max-width: 120%;
+    height: 600px;
+    flex-basis: 40%;
+    border: 20px dashed var(--cream);
+    padding: 20px;
+    margin-right: 50px ;
     
-.about-me text {
-    font-family: var(--text);
-    font-size: 20px;
-    padding-left: 20px;
 }
+
+.contact{
+    background-size: inherit;
+    background-color: var(--cream);
+    padding: 50px;
+}
+.contact img {
+    max-width: 120px;
+}
+.about-me, .portfolio, .contact h1 h2 {
+    font-size: x-large;
+}
+.phone, .linkedIn, .email{
+    display: flex;
+    display: inline-block;
+    padding: 100px;
+}
+.phone, .linkedIn, .email h3 p {
+    text-align: center;
+    font-size: large;
+}
+
